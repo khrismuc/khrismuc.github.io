@@ -2,17 +2,31 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <style>
+        html {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #ddd
+        }
+
+        body {
+            padding: 3em 2em;
+            background-color: #fff
+        }
+    </style>
 </head>
+
 <body>
-    <div id="myDiv">
-    </div>
+    <div id="myDiv">no module support :(</div>
     <script type="module">
         import { Student } from './models/student.js';
 
         window.onload = function () {
             var x = new Student();
             x.course.id = 1;
-            document.getElementById('myDiv').innerHTML = x.course.id;
+            document.getElementById('myDiv').innerHTML = "modules are supported!";
         }
     </script>
 </body>
