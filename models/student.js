@@ -1,4 +1,4 @@
-import { Course } from './course.js';
+import Course from './course.js';
 
 export function Student() {
 	this.firstName = '';
