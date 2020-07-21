@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        html {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #ddd
+        }
+
+        body {
+            padding: 3em 2em;
+            background-color: #fff
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <input type="button" value="click">
+
+    <div id="youtube"></div>
+
+    <script>
+        $('input').on('click', function (e) {
+            e.preventDefault();
+            $("#youtube").append('<iframe width="200" height="100" src="https://www.youtube.com/embed/zoMYU_nOGNg?rel=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>');
+        })
+    </script>
+</body>
+
+</html>
