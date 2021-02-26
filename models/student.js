@@ -1,4 +1,4 @@
-import Course from './Course.js';
+import Course from './course.js';
 
 export default class Student {
 	constructor(firstName = "", lastName = "") {
